@@ -15,7 +15,7 @@ function Pokedex({ pokemons: { pokemon } }) {
         {pokemon.map(({ pokemon: { name, url } }) => (
           <PokemonBox key={ name }>
             <p>{name}</p>
-            <Link to="pokemon/details">
+            <Link to="/pokedex/pokemon/details">
               <Button url={ url } onClick={ fetchPokemon }>Detalhes</Button>
             </Link>
           </PokemonBox>
