@@ -9,10 +9,10 @@ import Favorites from './pages/Favorites';
 function App() {
   return (
     <Switch>
-      <Route exact path="/" component={ Home } />
-      <Route path="/pokemon/details" component={PokemonDetails}/>
-      <Route path="/about" component={About} />
-      <Route path="/favorites" component={Favorites} />
+      <Route exact path="/pokedex" component={ Home } />
+      <Route path="/pokedex/pokemon/details" component={PokemonDetails}/>
+      <Route path="/pokedex/about" component={About} />
+      <Route path="/pokedex/favorites" component={Favorites} />
       <Route component={NotFound} />
     </Switch>
   );
