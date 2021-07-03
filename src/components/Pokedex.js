@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { PokemonContext } from '../context/PokemonContext';
 import { PokemonsContainer, PokemonBox } from './PokedexElements';
@@ -7,7 +8,7 @@ import Button from './Button';
 function Pokedex({ pokemons: { pokemon } }) {
   const { fetchPokemon } = useContext(PokemonContext);
 
-  if(!pokemon) return <p>Selecione o Tipo</p>
+  if (!pokemon) return <p>Selecione o Tipo</p>;
   return (
     <>
       <p>Pokémons</p>
@@ -24,5 +25,11 @@ function Pokedex({ pokemons: { pokemon } }) {
     </>
   );
 }
+
+Pokedex.propTypes = {
+  pokemons: PropTypes.shape({
+    pokemon: PropTypes.arrayOf(PropTypes.object),
+  }).isRequired,
+};
 
 export default Pokedex;

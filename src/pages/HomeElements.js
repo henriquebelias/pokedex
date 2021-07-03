@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-export const HomeContainer = styled.div`
-  text-align: center;
+const HomeContainer = styled.div` text-align: center;
 
   main {
-    min-height: 72vh;
+    display: block;
+    flex: 1 0 auto;
   }
-`
+`;
+
+export default HomeContainer;

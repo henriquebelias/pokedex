@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const DetailsContainer = styled.main`
-  min-height: 71vh;
+export const DetailsContainer = styled.main` min-height: 71vh;
   text-align: center;
 
   h3 {
@@ -12,9 +11,9 @@ export const DetailsContainer = styled.main`
   img {
     width: 8rem;
   }
-`
-export const AbilitiesGrid = styled.div`
-  display: flex;
+`;
+
+export const AbilitiesGrid = styled.div` display: flex;
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
@@ -24,4 +23,4 @@ export const AbilitiesGrid = styled.div`
   p {
     text-transform: capitalize;
   }
-`
+`;

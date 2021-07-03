@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HeaderContainer } from './HeaderElements';
+import HeaderContainer from './HeaderElements';
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
         {/* <Link to="/favorites">Favorites</Link> */}
       </nav>
     </HeaderContainer>
-  )
+  );
 }
 
 export default Header;

@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
-export const HeaderContainer = styled.header`
-  text-align: center;
+const HeaderContainer = styled.header` text-align: center;
 
   div {
-    height: 70px;
     background: red;
-    padding: 15px;
-    margin-bottom: 15px;
-    color: white;
     box-shadow: 2px 5px 5px gray;
+    color: white;
+    height: 70px;
+    margin-bottom: 15px;
+    padding: 15px;
     text-align: center;
   }
 
@@ -23,10 +22,10 @@ export const HeaderContainer = styled.header`
 
   a {
     margin: 0 1em;
-    text-decoration: none;
     opacity: 0.7;
+    text-decoration: none;
 
-    &:link, &:visited, &:hover, &:active {
+    &:link , &:visited , &:hover , &:active {
       color: black;
     }
 
@@ -34,4 +33,6 @@ export const HeaderContainer = styled.header`
       opacity: 1;
     }
   }
-`
+`;
+
+export default HeaderContainer;

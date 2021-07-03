@@ -5,16 +5,20 @@ import PokemonDetails from './pages/PokemonDetails';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Favorites from './pages/Favorites';
+import GlobalStyle from './globalStyles';
 
 function App() {
   return (
-    <Switch>
-      <Route exact path="/pokedex" component={ Home } />
-      <Route path="/pokedex/pokemon/details" component={PokemonDetails}/>
-      <Route path="/pokedex/about" component={About} />
-      <Route path="/pokedex/favorites" component={Favorites} />
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <GlobalStyle />
+      <Switch>
+        <Route exact path="/pokedex" component={ Home } />
+        <Route path="/pokedex/pokemon/details" component={ PokemonDetails } />
+        <Route path="/pokedex/about" component={ About } />
+        <Route path="/pokedex/favorites" component={ Favorites } />
+        <Route component={ NotFound } />
+      </Switch>
+    </>
   );
 }
 

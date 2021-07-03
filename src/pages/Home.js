@@ -1,8 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { PokemonContext } from '../context/PokemonContext';
 import { getPokemonsByType } from '../services/api';
-import { HomeContainer } from './HomeElements';
-import Footer from '../components/Footer';
+import HomeContainer from './HomeElements';
 import Header from '../components/Header';
 import ButtonsPanel from '../components/ButtonsPanel';
 import Pokedex from '../components/Pokedex';
@@ -14,7 +13,7 @@ function Home() {
   const fetchPokemons = async (url) => {
     const pokemonsObj = await getPokemonsByType(url);
     setPokemons(pokemonsObj);
-  }
+  };
 
   if (!pokemonTypes) return <p>Carregando...</p>;
   return (
@@ -26,9 +25,8 @@ function Home() {
         </section>
         <Pokedex pokemons={ pokemons } />
       </main>
-      <Footer />
     </HomeContainer>
-  )
+  );
 }
 
 export default Home;
